@@ -23,7 +23,31 @@ var arrayTotal = function (n) {
 	console.log((sum));
 	}
 	};
-		
+
+
+var objs = [ { first_nom: 'Lazslo',last_nom: 'Jamf' },
+            { first_nom: 'Pig', last_nom: 'Bodine'  },
+            { first_nom: 'Pirate', last_nom: 'Prentice' }
+           ];
+
+//Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the object.
+//Sorts by name ascending.
+//arrayname.sort(compare) would be an example.           
+var compare = function (a,b) {
+  if (a.name < b.name)
+     return -1;
+  if (a.name > b.name)
+    return 1;
+  return 0;
+}
+
+console.log(objs.sort(compare));
+           
+
+ 
+
+
+				
 
 
 
