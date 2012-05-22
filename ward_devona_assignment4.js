@@ -25,11 +25,6 @@ var arrayTotal = function (n) {
 	};
 
 
-var objs = [ { first_nom: 'Lazslo',last_nom: 'Jamf' },
-            { first_nom: 'Pig', last_nom: 'Bodine'  },
-            { first_nom: 'Pirate', last_nom: 'Prentice' }
-           ];
-
 //Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the object.
 //Sorts by name ascending.
 //arrayname.sort(compare) would be an example.           
@@ -41,7 +36,20 @@ var compare = function (a,b) {
   return 0;
 }
 
-console.log(objs.sort(compare));
+//Does a string follow a 123-456-7890 pattern like a phone number?
+//Enter the phone number in validate() as a string
+var validate = function (phone) {
+    var check = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+    if (check.test(phone)) {
+        console.log("Thank you for providing a phone number");
+    } else {
+        console.log("Please enter a valid phone number");
+    }
+}
+
+
+
            
 
  
