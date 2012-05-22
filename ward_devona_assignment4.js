@@ -48,6 +48,13 @@ var validate = function (phone) {
     }
 }
 
+//Title-case a string 
+//Insert lower-case string in to makeTitle(), and the string will be converted in to a title string.
+var makeTitle = function (n)
+{
+    return n.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
 
 
            
